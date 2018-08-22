@@ -6,7 +6,8 @@
   "homepage": "https://balayevkerim.github.io/myportfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "author": "Balayev Kerim",
   "license": "MIT",
