@@ -1,0 +1,39 @@
+//widescreen
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+//desktops & laptos
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+//tablets * small laptoops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+  .about-info {
+    grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+//smartphoness
+@include mediaSm {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
